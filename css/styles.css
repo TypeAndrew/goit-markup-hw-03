@@ -8,7 +8,10 @@
     --color-brown: #757575;
 }
 
+h1, h2, h3, p, ul {
 
+    margin: 0 0;
+}
 
 body {
    
@@ -19,6 +22,25 @@ body {
     background: var(--color-work);
     
 }
+
+.conteiner {
+
+    margin-left:  215px;
+    margin-right: 215px;
+    
+  
+    
+}
+
+.topline .conteiner {
+
+    margin: 0px 215px;
+    
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
 
 
 .current-page {
@@ -36,7 +58,6 @@ body {
     text-decoration: none;
     color: var(--color-brown);
 }
-
 
 a:hover {
 
@@ -65,11 +86,35 @@ a:hover {
 }
 
 .topline {
-   
+  
   background: var(--color-white);
- 
+  
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border: 1px solid #ECECEC;
 }
 
+.topline-nav {
+    
+    
+    align-self: center;
+    
+   
+}
+
+.menu-main-nav {
+
+    margin-left;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.menu-nav-address {
+    display: block;
+    align-self: center;
+}
 
 .bluewords {
     color: var(--color-blue);
@@ -87,16 +132,9 @@ a:hover {
     text-decoration-color: none;
 }
 
-
-.menu-nav-project {
-
-    display: inline-flexbox;
-}
-
-
-
 .item-nav {
-    
+    display: inline;
+    margin-left: 50px;
     list-style-type: none;
     font-weight: 500;
     line-height: 1.14;
@@ -114,7 +152,7 @@ a:hover {
 
 .tittle-big{
     
-    height: 600px;
+    margin-bottom: 30px;
     
     font-family: 'Roboto';
     font-style: normal;
@@ -133,6 +171,8 @@ a:hover {
 
 .tittle-small {
     
+    padding-bottom: 50px;
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -144,13 +184,22 @@ a:hover {
 
 .main-top {
     
+    padding-top: 200px;
+    padding-bottom: 200px;
+    display: flex; 
+    justify-content: center;
+    text-align: center;
+        
     background-color: var(--color-dark);
     color: var(--color-white);
 }
 
 .button {
-        
-   background: var(--color-blue);
+    
+    width: 200px;
+    height: 50px;
+
+    background: var(--color-blue);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 
@@ -187,7 +236,7 @@ a:hover {
     background: var(--color-white);
 }
 
-.button-portfolio:focus {
+.button-portfolio:focus, .button:focus {
     border-radius: 0px;
 }
 
@@ -197,18 +246,27 @@ a:hover {
 
 }
 
+.main-benefits {
+
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
+
 .main-our-work {
 
-   
+    padding-bottom: 94px;
     background: var(--color-work);
 }
 
 .item-work {
+    
     list-style-type: none;
 }
 
 .main-our-team {
     
+    padding-bottom: 94px;
     background: var(--color-grey);
 
 }
@@ -234,7 +292,23 @@ a:hover {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.menu-nav-project {
+    
+    padding-left: 0px;
 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    list-style: none;
+    
+}
+
+.menu-nav-projec:nth-child(3n) {
+
+    margin-left: 50px;
+
+}
 
 .item-project {
     
@@ -250,8 +324,10 @@ a:hover {
     border: 1px solid var(--color-white);
 }
 
+
 .tittle-item-project {
     
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -272,8 +348,16 @@ a:hover {
 }
 
 .item-benefits {
+    
     list-style-type: none;
     color: var(--color-brown);
+}
+
+.item-benefits:not(:first-child), 
+.item-work:not(:first-child), 
+.item-worker:not(:first-child) {
+    margin-left: 30px;
+
 }
 
 .item-benefits-tittle {
@@ -286,10 +370,10 @@ a:hover {
 }
 
 .item-worker {
+   
    list-style-type: none;
    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-
 
 .st-footer {
     font-style: normal;
@@ -333,5 +417,19 @@ a:hover {
 .filters-main {
 
 background: var(--color-white);
+
+}
+
+.filters-list {
+    padding-top: 94px;
+    padding-bottom: 50px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.hidden-tittle {
+
+    opacity: 0;
 
 }
