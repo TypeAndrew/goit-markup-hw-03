@@ -10,7 +10,8 @@
 
 h1, h2, h3, p, ul {
 
-    margin: 0 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -20,28 +21,29 @@ body {
     font-size: 14px;
     letter-spacing: 0.03em;
     color: var(--color-text);
-    background: var(--color-work);
+    background: var(--color-white);
     
 }
 
 .conteiner {
-
-    margin: 0px 215px;
-    
+    margin: 0 215px;
+    margin: 0 auto;
+    width: 1200px;
+    padding: 0 15px;
     
 }
 
 .main-our-work .conteiner {
     
     display: block;
-   
+    width: 1200px;
 }
 
 .topline .conteiner {
-
+    box-sizing: content-box;
     display: flex;
     align-content: center;
-    justify-content: space-between;
+   /* justify-content: space-between;*/
 }
 
 .section {
@@ -84,14 +86,15 @@ a:hover {
     line-height: 1.19;/*31px*/;
     /* identical to box height */
     text-decoration: none;
-    letter-spacing: 0.03em;
+   letter-spacing: 0.03em;
+    
 
     color: var(--color-dark);
-   
+    
 }
 
 .logo:hover {
-   text-decoration-line: underline;
+  text-decoration-line: none;
    text-decoration-color: var(--color-blue); 
 }
 
@@ -99,9 +102,14 @@ a:hover {
   
   background: var(--color-white);
   
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 25px;
   border: 1px solid #ECECEC;
+}
+
+.topline .logo {
+
+    margin-right: 93px;
 }
 
 .topline-nav {
@@ -125,6 +133,7 @@ a:hover {
 .menu-nav-address {
     display: block;
     align-self: center;
+    margin-left: 331px;
 }
 
 .bluewords {
@@ -145,18 +154,24 @@ a:hover {
 
 .item-nav {
     display: inline;
-    margin-left: 50px;
+    
     list-style-type: none;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
+.item-nav:not(:last-child) {
+
+    margin-right: 50px;
+
+}
+
 .contact:hover, .current-page:hover, .page:hover {
 
     color: var(--color-blue);
-    text-decoration: underline;
-    text-decoration-line: underline;
+    text-decoration: none;
+    text-decoration-line: none;
     text-decoration-color: var(--color-blue);
 }
 
@@ -164,7 +179,8 @@ a:hover {
 .tittle-big{
     
     margin-bottom: 30px;
-    
+    width: 696px;
+    margin: 0 auto;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
@@ -174,6 +190,7 @@ a:hover {
     /* or 136% */
 
     text-align: center;
+    align-content: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     
@@ -184,7 +201,8 @@ a:hover {
 .tittle-small {
     
    
-    padding-bottom: 50px;
+    /*padding-bottom: 50px;*/
+    margin-bottom: 50px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -199,8 +217,8 @@ a:hover {
     
     padding-top: 200px;
     padding-bottom: 200px;
-    display: flex; 
-    justify-content: center;
+    /*display: flex; 
+    justify-content: center;*/
     text-align: center;
         
     background-color: var(--color-dark);
@@ -214,6 +232,7 @@ a:hover {
     background: var(--color-blue);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: 0px;
 
     font-style: normal;
     font-weight: 700;
@@ -264,15 +283,17 @@ a:hover {
 
 .main-our-work {
 
-    
-    
-    background: var(--color-work);
+    padding-top: 0;
 }
 
 .item-work {
 
-    max-width: 100%;
-    height: auto;
+    margin-left: 30px;
+}
+
+.item-work {
+
+ 
     list-style-type: none;
     
     
@@ -297,13 +318,26 @@ a:hover {
     line-height: 1.19;
     
     background: var(--color-dark);
-    
+       
 }
+
+.footer .conteiner .logo {
+
+    margin-bottom: 20px;
+}
+
 .item-footer {
 
+    
     line-height: 1.71;
     text-decoration: none;
+    list-style: none;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.item-footer:not(:last-child) {
+
+    margin-bottom: 9px;
 }
 
 .menu-nav-project {
@@ -341,7 +375,7 @@ a:hover {
 
 .tittle-item-project {
     
-
+    margin-bottom: 4px ;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -375,12 +409,15 @@ a:hover {
 }
 
 .item-benefits-tittle {
+    
+    padding-bottom: 10px;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 1.92;
     color: var(--color-brown);
     text-transform: uppercase;
+    color: var(--color-text);
 }
 
 .item-worker {
@@ -398,8 +435,21 @@ a:hover {
 .st-footer-address {
     font-style: normal;
     text-decoration: none;
+    
     color: var(--color-white);
     
+}
+
+.footer .menu-nav {
+
+    margin-top: 20px;
+
+}
+
+.footer .logo {
+
+    margin-bottom: 20px;
+
 }
 
 .item-worker-name {
@@ -452,6 +502,18 @@ a:hover {
 
 .hidden-tittle {
 
-    opacity: 0;
+    display: none;
 
+}
+
+.picture {
+
+    max-width: 100%;
+    height: auto;
+
+}
+
+.elemet-project {
+
+    margin: 20px 24px;
 }
