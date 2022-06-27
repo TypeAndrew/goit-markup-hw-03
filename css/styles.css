@@ -6,6 +6,9 @@
     --color-text: #212121;
     --color-blue: #2196F3;
     --color-brown: #757575;
+    --color-border: #EEEEEE;
+
+    --project-item-gep: 30px;
 }
 
 h1, h2, h3, p, ul {
@@ -26,8 +29,8 @@ body {
 }
 
 .conteiner {
-    margin: 0 215px;
     margin: 0 auto;
+    
     width: 1200px;
     padding: 0 15px;
     
@@ -40,10 +43,12 @@ body {
 }
 
 .topline .conteiner {
-    box-sizing: content-box;
+   
     display: flex;
     align-content: center;
-   /* justify-content: space-between;*/
+    
+    
+   
 }
 
 .section {
@@ -104,7 +109,7 @@ a:hover {
   
   padding-top: 24px;
   padding-bottom: 25px;
-  border: 1px solid #ECECEC;
+  border: 1px solid var(--color-border);
 }
 
 .topline .logo {
@@ -133,7 +138,7 @@ a:hover {
 .menu-nav-address {
     display: block;
     align-self: center;
-    margin-left: 331px;
+    margin-left: auto;
 }
 
 .bluewords {
@@ -341,20 +346,31 @@ a:hover {
 }
 
 .menu-nav-project {
-    
-    padding-left: 0px;
-
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
+    margin: 0;
+    padding: 0;
     list-style: none;
     
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin-left: (-1*var(--project-item-gep));
+    margin-top: (-1*var(--project-item-gep));
+    
+}
+
+.menu-nav-project > .item-project {
+   
+    border: 1px solid var(--color-border);
+    flex-basis: calc(100% / 3 - var(--project-item-gep));
+    margin-left: var(--project-item-gep);
+    margin-top: var(--project-item-gep);
+
 }
 
 .menu-nav-projec:nth-child(3n) {
 
     margin-left: 50px;
+    
 
 }
 
@@ -363,17 +379,14 @@ a:hover {
     letter-spacing: 0.06em;
     
     color: var(--color-text);
-    width: 370px;
-    height: 404px;
-    left: 215px;
-    top: 1130px;
     
     background: var(--color-white);
-    border: 1px solid var(--color-white);
+    
+     
 }
 
-
 .tittle-item-project {
+    
     
     margin-bottom: 4px ;
     font-weight: 700;
@@ -516,4 +529,5 @@ a:hover {
 .elemet-project {
 
     margin: 20px 24px;
+    margin-top: 20px;;
 }
