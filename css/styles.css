@@ -287,7 +287,7 @@ a:hover {
 
 .menu-nav-project>.item-project {
     border: 1px solid var(--color-border);
-    flex-basis: calc(97% / 3 - var(--project-item-gep));
+    flex-basis: calc(100% / 3 - var(--project-item-gep));
     margin-left: var(--project-item-gep);
     margin-top: var(--project-item-gep);
 }
