@@ -151,9 +151,9 @@ a:hover {
 }
 
 .tittle-big {
-    margin-bottom: 30px;
+    
     width: 696px;
-    margin: 0 auto;
+    margin: 0 auto 30px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
@@ -219,6 +219,7 @@ a:hover {
     /* shadow-middle */
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    border: none;
     margin-right: 8px;
     background: var(--color-white);
 }
@@ -237,9 +238,6 @@ a:hover {
     padding-top: 0;
 }
 
-.item-work {
-    margin-left: 30px;
-}
 
 .item-work {
     list-style-type: none;
@@ -286,7 +284,7 @@ a:hover {
 }
 
 .menu-nav-project>.item-project {
-    border: 1px solid var(--color-border);
+   
     flex-basis: calc(100% / 3 - var(--project-item-gep));
     margin-left: var(--project-item-gep);
     margin-top: var(--project-item-gep);
@@ -321,16 +319,17 @@ a:hover {
 .item-benefits {
     list-style-type: none;
     color: var(--color-brown);
+    width: 270px;
 }
 
 .item-benefits:not(:first-child),
-.item-work:not(:first-child),
+
 .item-worker:not(:first-child) {
     margin-left: 30px;
 }
 
 .item-benefits-tittle {
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -338,6 +337,11 @@ a:hover {
     color: var(--color-brown);
     text-transform: uppercase;
     color: var(--color-text);
+}
+
+.item-benefits-content {
+
+    line-height: 1.71;
 }
 
 .item-worker {
@@ -357,17 +361,13 @@ a:hover {
     color: var(--color-white);
 }
 
-.footer .menu-nav {
-    margin-top: 20px;
-}
-
 .footer .logo {
     margin-bottom: 20px;
 }
 
 .item-worker-name {
-    padding-top: 30px;
-    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -379,7 +379,7 @@ a:hover {
 }
 
 .item-worker-type {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     font-family: 'Roboto';
     font-style: normal;
     font-size: 16px;
@@ -408,8 +408,17 @@ a:hover {
 .picture {
     max-width: 100%;
     height: auto;
+    display: block;
 }
 
 .element-project {
-    margin: 20px 24px;
+    padding: 20px 24px;
+    border: 1px solid var(--color-border);
+}
+
+.address-footer {
+
+    margin-top: 20px;
+    
+
 }
